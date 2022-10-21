@@ -48,7 +48,6 @@ public class GameGUI {
     private AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(music);
     private Clip clip;
 
-
     GameGUI() throws IOException, LineUnavailableException, UnsupportedAudioFileException {
 
         // AUDIO
@@ -126,7 +125,6 @@ public class GameGUI {
         frame.setResizable(true);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
-
     }
 
     private void shuffle() {
@@ -275,5 +273,4 @@ public class GameGUI {
         scoreLabel.setText("GAME OVER");
         attemptsLabel.setText("Final Score: " + score);
     }
-
 }
